@@ -1,0 +1,56 @@
+{
+  "name": "hello-world",
+  "private": true,
+  "sideEffects": false,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "shopify hydrogen build",
+    "dev": "shopify hydrogen dev",
+    "preview": "npm run build && shopify hydrogen preview",
+    "lint": "eslint --no-error-on-unmatched-pattern --ext .js,.ts,.jsx,.tsx .",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@shopify/prettier-config",
+  "dependencies": {
+    "@offstack/sledge-js": "^0.0.112",
+    "@remix-run/css-bundle": "^1.18.1",
+    "@remix-run/react": "1.17.1",
+    "@shopify/cli": "3.45.0",
+    "@shopify/cli-hydrogen": "^5.0.2",
+    "@shopify/hydrogen": "^2023.4.6",
+    "@shopify/remix-oxygen": "^1.1.1",
+    "@sledge-app/core": "^0.0.80",
+    "@sledge-app/react-instant-search": "^0.0.64",
+    "@sledge-app/react-product-review": "^0.0.63",
+    "@sledge-app/react-wishlist": "^0.0.116",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "clsx": "^1.2.1",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "isbot": "^3.6.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.2",
+    "schema-dts": "^1.1.2",
+    "slugify": "^1.6.6",
+    "tiny-invariant": "^1.3.1",
+    "typographic-base": "^1.0.4"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "1.17.1",
+    "@shopify/oxygen-workers-types": "^3.17.2",
+    "@shopify/prettier-config": "^1.1.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@types/eslint": "^8.4.10",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.20.0",
+    "eslint-plugin-hydrogen": "0.12.2",
+    "prettier": "^2.8.4",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^4.9.5"
+  },
+  "engines": {
+    "node": ">=16.13"
+  }
+}
